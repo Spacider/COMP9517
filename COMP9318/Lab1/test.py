@@ -4,8 +4,8 @@ __author__ = 'Gary'
 
 from math import sqrt, floor
 import math
-import COMP9318.Lab.submission as submission
-import COMP9318.Lab.str_to_tokens as str_to_tokens
+import COMP9318.Lab1.submission as submission
+import COMP9318.Lab1.str_to_tokens as str_to_tokens
 
 '''
 Question 01
