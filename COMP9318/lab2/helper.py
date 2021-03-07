@@ -4,6 +4,10 @@ import numpy as np
 
 ################# helper functions #################
 
+def read_data(filename):
+    df = pd.read_csv(filename, sep='\t')
+    return (df)
+
 # helper functions
 def project_data(df, d):
     # Return only the d-th column of INPUT
