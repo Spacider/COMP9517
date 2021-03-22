@@ -2,8 +2,7 @@ import pandas as pd
 import numpy as np
 
 
-################# helper functions #################
-
+################# helper functions ################
 def read_data(filename):
     df = pd.read_csv(filename, sep='\t')
     return (df)
