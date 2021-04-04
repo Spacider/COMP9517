@@ -1,0 +1,24 @@
+1. 使用 0-top 和 0-left 作为negative，结果发现识别了很多的树和路桩(pic 1)
+2. 使用右下角 + 1 作为negative pic 2
+3. 仅使用train 作为 negative pic 3
+4. 使用了更多的训练集 pic 4
+5. 使用了多的negative ，左上 右下
+6 修改大小到200,100
+7 修改到64,64
+
+
+The training/test data may not have labels for all cars in the image. 
+This means that if you have a perfect car detection algorithm, 
+there might be a lot of ‘false positives’ just because the ground truth have 
+only 1 label for an image with more than 1 car. This may be a limitation of 
+the provided test data. It would be good to include it in your results and 
+discussion section. Alternatively, you may use the supplementary dataset
+ provided as a SECOND step to train/test your algorithm. As compared 
+ to the training/test data, the supplementary dataset has more labeled 
+ cars, providing a better evaluation. If you choose to use this, there
+  might be a lot of false negatives since all cars could be labelled,
+   even small ones. Again, it would be good to discuss on your paper. 
+   I have attached a sample image with bbox labels from the supplementary data.
+
+
+From my understanding, the task is aimed at implement solutions to detect vehicles in a single image frame. We will be given train dataset to train our own model and use that model to test images from  the input. The difficulty of this task is that the dataset contains large amount of data and it does not provide negative examples if we want apply supervised learning. Moreover, 
